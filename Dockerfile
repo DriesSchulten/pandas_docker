@@ -5,6 +5,6 @@ MAINTAINER Dries Schulten
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get -yqq update
-RUN apt-get -yqq install python-pip python-dev
+RUN apt-get -yqq install python-pip python-dev libpq-dev
 
-RUN pip install --no-cache-dir numpy==1.11.1 pandas==0.18.1
+RUN pip install --no-cache-dir numpy==1.11.1 pandas==0.18.1 psycopg2==2.6.2
